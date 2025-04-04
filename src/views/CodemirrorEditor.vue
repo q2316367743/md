@@ -366,6 +366,10 @@ onMounted(() => {
 })
 
 const isOpenHeadingSlider = ref(false)
+
+window.setValue = (text: string) => {
+  editor.value?.setValue(text)
+}
 </script>
 
 <template>
